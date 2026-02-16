@@ -121,7 +121,7 @@ function UserAvatars() {
         </div>
       ))}
       <div className="w-10 h-10 rounded-full border-2 border-cream flex items-center justify-center text-[10px] font-medium bg-stone-100 text-stone-600">
-        +2k
+        +20
       </div>
     </div>
   )
