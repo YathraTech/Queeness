@@ -71,9 +71,7 @@ function Description() {
 function Stats() {
   return (
     <div className="mt-8 flex gap-4">
-      <StatItem value="98%" label="Réussite" />
-      <div className="w-px h-10 bg-white/10" />
-      <StatItem value="24/7" label="Support" />
+      <StatItem value="94%" label="Réussite" />
     </div>
   )
 }
