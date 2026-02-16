@@ -34,7 +34,7 @@ function SectionHeader() {
         Un parcours adapté à vos besoins
       </h2>
       <p className="text-lg text-stone-600 max-w-3xl mx-auto">
-        6 modules complémentaires pour une maîtrise complète du français professionnel
+        Des modules complémentaires pour une maîtrise complète du français professionnel
       </p>
     </motion.div>
   )
@@ -46,7 +46,6 @@ function ProgramModules() {
       icon: MessageSquare,
       number: "01",
       title: "Communication orale",
-      duration: "20h",
       content: [
         "Techniques de présentation",
         "Prise de parole en public",
@@ -59,7 +58,6 @@ function ProgramModules() {
       icon: PenTool,
       number: "02",
       title: "Expression écrite",
-      duration: "20h",
       content: [
         "Rédaction de rapports",
         "Emails professionnels",
@@ -72,7 +70,6 @@ function ProgramModules() {
       icon: Globe,
       number: "03",
       title: "Vocabulaire métier",
-      duration: "15h",
       content: [
         "Terminologie sectorielle",
         "Expressions idiomatiques",
@@ -85,7 +82,6 @@ function ProgramModules() {
       icon: Briefcase,
       number: "04",
       title: "Négociation",
-      duration: "15h",
       content: [
         "Techniques de négociation",
         "Argumentation",
@@ -98,7 +94,6 @@ function ProgramModules() {
       icon: GraduationCap,
       number: "05",
       title: "Culture d'entreprise",
-      duration: "10h",
       content: [
         "Codes professionnels",
         "Savoir-vivre en entreprise",
@@ -111,7 +106,6 @@ function ProgramModules() {
       icon: BookOpen,
       number: "06",
       title: "Projet professionnel",
-      duration: "20h",
       content: [
         "Mise en situation réelle",
         "Cas pratiques",
@@ -135,7 +129,6 @@ function ModuleCard({
   icon: Icon,
   number,
   title,
-  duration,
   content,
   color,
   index
@@ -143,7 +136,6 @@ function ModuleCard({
   icon: typeof MessageSquare
   number: string
   title: string
-  duration: string
   content: string[]
   color: string
   index: number
@@ -158,22 +150,17 @@ function ModuleCard({
       className="bg-white rounded-2xl border border-stone-200 overflow-hidden hover:shadow-xl transition-all"
     >
       <div className={`h-2 bg-gradient-to-r ${color}`} />
-      
+
       <div className="p-6">
-        <div className="flex items-start justify-between mb-4">
-          <div className="flex items-center gap-3">
-            <span className="text-3xl font-bold text-stone-300">{number}</span>
-            <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${color} flex items-center justify-center text-white`}>
-              <Icon size={20} />
-            </div>
+        <div className="flex items-center gap-3 mb-4">
+          <span className="text-3xl font-bold text-stone-300">{number}</span>
+          <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${color} flex items-center justify-center text-white`}>
+            <Icon size={20} />
           </div>
-          <span className="text-sm font-medium text-stone-500 bg-stone-100 px-2 py-1 rounded-md">
-            {duration}
-          </span>
         </div>
-        
+
         <h3 className="font-serif text-xl text-brown-900 mb-4">{title}</h3>
-        
+
         <ul className="space-y-2">
           {content.map((item) => (
             <li key={item} className="flex items-start gap-2 text-sm text-stone-600">
@@ -189,9 +176,9 @@ function ModuleCard({
 
 function LevelsSection() {
   const levels = [
-    { level: "A1-A2", name: "Débutant", duration: "3-4 mois", intensity: "20h/semaine" },
-    { level: "B1-B2", name: "Intermédiaire", duration: "4-6 mois", intensity: "15h/semaine" },
-    { level: "C1-C2", name: "Avancé", duration: "6-8 mois", intensity: "10h/semaine" }
+    { level: "A2+", name: "Élémentaire avancé", description: "Communiquer dans des situations simples du quotidien professionnel" },
+    { level: "B1-B2", name: "Intermédiaire", description: "Interagir avec aisance dans un contexte professionnel courant" },
+    { level: "C1", name: "Avancé", description: "Maîtriser le français dans des situations professionnelles complexes" }
   ]
 
   return (
@@ -202,12 +189,12 @@ function LevelsSection() {
       className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-3xl p-10 md:p-16 text-white"
     >
       <h3 className="font-serif text-3xl mb-4 text-center">
-        Adaptée à tous les niveaux
+        Niveaux visés : A2+ à C1
       </h3>
       <p className="text-brown-200 text-center mb-12 max-w-2xl mx-auto">
         Quel que soit votre niveau actuel, nous vous accompagnons vers l'excellence
       </p>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {levels.map((level, index) => (
           <LevelCard key={level.level} {...level} index={index} />
@@ -220,14 +207,12 @@ function LevelsSection() {
 function LevelCard({
   level,
   name,
-  duration,
-  intensity,
+  description,
   index
 }: {
   level: string
   name: string
-  duration: string
-  intensity: string
+  description: string
   index: number
 }) {
   return (
@@ -239,11 +224,8 @@ function LevelCard({
       className="bg-white/10 backdrop-blur border border-white/20 rounded-xl p-6 text-center hover:bg-white/15 transition-colors"
     >
       <div className="text-2xl font-bold mb-2">{level}</div>
-      <div className="text-lg font-medium mb-4">{name}</div>
-      <div className="space-y-2 text-sm text-brown-200">
-        <div>Durée : {duration}</div>
-        <div>Rythme : {intensity}</div>
-      </div>
+      <div className="text-lg font-medium mb-3">{name}</div>
+      <p className="text-sm text-brown-200">{description}</p>
     </motion.div>
   )
 }
