@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Phone, Mail, User, MessageCircle } from 'lucide-react'
+import { Phone, Mail, User, MessageCircle, FileText } from 'lucide-react'
 
 export function HandicapContact() {
   return (
@@ -63,6 +63,23 @@ function ReferentSection() {
           <ContactInfo icon={Phone} label="Téléphone" value="06.63.38.33.41" href="tel:0663383341" />
         </div>
       </div>
+
+      <motion.a
+        href="/referentiel-handicap.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 p-4 bg-white/70 rounded-xl border border-brown-200 hover:bg-white hover:border-brown-300 transition-all group mb-4"
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+      >
+        <div className="w-10 h-10 rounded-lg bg-brown-100 flex items-center justify-center flex-shrink-0">
+          <FileText size={20} className="text-brown-700" />
+        </div>
+        <div>
+          <div className="text-sm font-medium text-brown-800">Consulter le Référentiel Handicap</div>
+          <div className="text-xs text-stone-500">Ouvrir le PDF dans un nouvel onglet</div>
+        </div>
+      </motion.a>
 
       <div className="p-4 bg-white/70 rounded-xl border border-brown-200">
         <p className="text-xs text-stone-600 leading-relaxed">
