@@ -44,24 +44,30 @@ function ReferentSection() {
           <p className="text-brown-600 text-sm">À votre écoute</p>
         </div>
       </div>
-      
+
       <div className="space-y-4 mb-8">
         <p className="text-stone-600 leading-relaxed">
-          Notre référent handicap est à votre disposition pour étudier les adaptations 
-          nécessaires et vous accompagner tout au long de votre parcours de formation.
+          Pour toute demande liée à l'accessibilité ou à un accompagnement spécifique,
+          vous pouvez nous contacter via le formulaire de notre site ou vous présenter
+          directement dans nos locaux.
         </p>
-        
+
+        <p className="text-stone-600 leading-relaxed">
+          Lavania SUTHARSAN, directrice de Queeness, notre référent handicap est à votre
+          disposition pour étudier les possibilités d'adaptation.
+        </p>
+
         <div className="space-y-3">
           <ContactInfo icon={User} label="Référent" value="Lavania SUTHARSAN" />
           <ContactInfo icon={Mail} label="Email" value="lavania2000@hotmail.com" href="mailto:lavania2000@hotmail.com" />
           <ContactInfo icon={Phone} label="Téléphone" value="06.63.38.33.41" href="tel:0663383341" />
         </div>
       </div>
-      
+
       <div className="p-4 bg-white/70 rounded-xl border border-brown-200">
         <p className="text-xs text-stone-600 leading-relaxed">
-          <strong>Confidentialité garantie :</strong> Toutes les informations partagées 
-          restent strictement confidentielles et sont utilisées uniquement pour adapter 
+          <strong>Confidentialité garantie :</strong> Toutes les informations partagées
+          restent strictement confidentielles et sont utilisées uniquement pour adapter
           au mieux votre formation.
         </p>
       </div>
@@ -69,16 +75,16 @@ function ReferentSection() {
   )
 }
 
-function ContactInfo({ 
-  icon: Icon, 
-  label, 
-  value, 
-  href 
-}: { 
-  icon: typeof User; 
-  label: string; 
-  value: string;
-  href?: string;
+function ContactInfo({
+  icon: Icon,
+  label,
+  value,
+  href
+}: {
+  icon: typeof User
+  label: string
+  value: string
+  href?: string
 }) {
   const content = (
     <div className="flex items-center gap-3">
@@ -89,7 +95,7 @@ function ContactInfo({
       </div>
     </div>
   )
-  
+
   if (href) {
     return (
       <a href={href} className="block hover:bg-white/50 p-2 -m-2 rounded-lg transition-colors">
@@ -97,7 +103,7 @@ function ContactInfo({
       </a>
     )
   }
-  
+
   return content
 }
 
@@ -114,19 +120,19 @@ function ActionSection() {
         >
           <MessageCircle size={28} className="text-brown-700" />
         </motion.div>
-        
+
         <h3 className="font-serif text-3xl text-brown-900 mb-4">
           Parlons de vos besoins
         </h3>
-        
+
         <p className="text-stone-600 mb-8 max-w-md mx-auto">
-          N'hésitez pas à nous contacter pour discuter de vos besoins spécifiques. 
+          N'hésitez pas à nous contacter pour discuter de vos besoins spécifiques.
           Nous trouverons ensemble les meilleures solutions d'adaptation.
         </p>
-        
+
         <div className="space-y-3">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button 
+            <Button
               className="w-full px-8 py-4 h-auto rounded-xl bg-brown-700 hover:bg-brown-800 text-white font-medium text-base"
               asChild
             >
@@ -135,9 +141,9 @@ function ActionSection() {
               </Link>
             </Button>
           </motion.div>
-          
+
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button 
+            <Button
               variant="outline"
               className="w-full px-8 py-4 h-auto rounded-xl border-brown-300 hover:bg-brown-50 text-brown-700 font-medium text-base"
               asChild
@@ -148,7 +154,7 @@ function ActionSection() {
             </Button>
           </motion.div>
         </div>
-        
+
         <div className="mt-8 pt-8 border-t border-stone-200">
           <p className="text-xs text-stone-500 text-center">
             Disponible du lundi au vendredi de 9h à 18h
