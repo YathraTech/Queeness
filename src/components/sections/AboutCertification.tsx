@@ -148,7 +148,6 @@ function CategoriesCard() {
       
       <div className="space-y-3">
         <CategoryItem title="ACTIONS DE FORMATION" />
-        <CategoryItem title="BILANS DE COMPÉTENCES" />
       </div>
     </motion.div>
   )
