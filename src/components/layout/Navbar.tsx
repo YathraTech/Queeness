@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 const navLinks = [
   { href: '/', label: 'Accueil' },
   { href: '/fle-professionnel', label: 'FLE Professionnel' },
+  { href: '/financement', label: 'Financement' },
   { href: '/qui-suis-je', label: 'Qui suis-je ?' },
   { href: '/handicap', label: 'Handicap' },
 ]
