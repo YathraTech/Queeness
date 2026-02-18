@@ -5,7 +5,7 @@ import { Users, Building2, Heart } from 'lucide-react'
 
 export function HandicapContent() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-12 sm:py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         <EngagementSection />
         <ContentCards />
@@ -23,7 +23,7 @@ function EngagementSection() {
       transition={{ duration: 0.6 }}
       className="text-center mb-16"
     >
-      <h2 className="font-serif text-4xl md:text-5xl text-brown-900 mb-6">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-brown-900 mb-6">
         Notre Engagement
       </h2>
       <p className="text-lg text-stone-600 max-w-3xl mx-auto leading-relaxed">
@@ -63,7 +63,7 @@ function ContentCards() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: index * 0.1, duration: 0.5 }}
-          className="bg-cream rounded-2xl p-8 border border-stone-200 hover:shadow-xl transition-shadow"
+          className="bg-cream rounded-2xl p-5 sm:p-8 border border-stone-200 hover:shadow-xl transition-shadow"
         >
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-lg bg-brown-100 flex items-center justify-center flex-shrink-0">

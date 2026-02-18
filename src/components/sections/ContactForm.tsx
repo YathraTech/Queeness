@@ -52,7 +52,7 @@ export function ContactForm() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="bg-white rounded-2xl border border-stone-200 shadow-xl p-8 md:p-10"
+      className="bg-white rounded-2xl border border-stone-200 shadow-xl p-5 sm:p-8 md:p-10"
     >
       <FormHeader />
       <form onSubmit={handleSubmit} className="space-y-6">

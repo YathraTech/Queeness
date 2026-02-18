@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export function ContactHero() {
   return (
-    <section className="relative pt-32 pb-20 bg-gradient-to-br from-brown-50 via-cream to-white">
+    <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 bg-gradient-to-br from-brown-50 via-cream to-white">
       <BackgroundPattern />
       <HeroContent />
     </section>
@@ -45,7 +45,7 @@ function BackgroundPattern() {
 
 function HeroContent() {
   return (
-    <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ function Badge() {
 
 function Title() {
   return (
-    <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 text-brown-900">
+    <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 text-brown-900">
       Contactez-nous
     </h1>
   )

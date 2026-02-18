@@ -5,7 +5,7 @@ import { Target, Headphones, MessageCircle, BookOpen, Mic, Users } from 'lucide-
 
 export function FLEObjectives() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-12 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeader />
         <ObjectivesGrid />
@@ -29,7 +29,7 @@ function SectionHeader() {
           <span className="text-sm font-medium text-brown-700">Objectifs pédagogiques</span>
         </div>
       </div>
-      <h2 className="font-serif text-4xl md:text-5xl text-brown-900 mb-4">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-brown-900 mb-4">
         Une formation complète et structurée
       </h2>
       <p className="text-lg text-stone-600 max-w-3xl mx-auto">
@@ -70,7 +70,7 @@ function ObjectivesGrid() {
   ]
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
       {objectives.map((objective, index) => (
         <ObjectiveCard key={objective.title} {...objective} index={index} />
       ))}
@@ -97,7 +97,7 @@ function ObjectiveCard({
       transition={{ delay: index * 0.1 }}
       className="group"
     >
-      <div className="bg-white rounded-2xl border border-stone-200 p-8 h-full hover:shadow-xl transition-all hover:border-brown-200">
+      <div className="bg-white rounded-2xl border border-stone-200 p-6 sm:p-8 h-full hover:shadow-xl transition-all hover:border-brown-200">
         <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brown-100 to-brown-200 flex items-center justify-center group-hover:scale-110 transition-transform mb-6">
           <Icon size={24} className="text-brown-800" />
         </div>

@@ -92,7 +92,7 @@ export default function PolitiqueQualitePage() {
 
 function QualiteHero() {
   return (
-    <section className="relative pt-32 pb-20 bg-gradient-to-br from-cream via-brown-50 to-white">
+    <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 bg-gradient-to-br from-cream via-brown-50 to-white">
       <div className="absolute inset-0 bg-[radial-gradient(#e7e5e4_1px,transparent_1px)] [background-size:20px_20px] opacity-10" />
       <motion.div
         className="absolute top-40 right-20 w-64 h-64 rounded-full bg-brown-100/30 blur-3xl"
@@ -100,7 +100,7 @@ function QualiteHero() {
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -121,7 +121,7 @@ function QualiteHero() {
             Excellence &amp; Amélioration continue
           </div>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 text-brown-900">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 text-brown-900">
             Politique Qualité
           </h1>
 
@@ -141,11 +141,11 @@ function QualiteHero() {
 
 function QualiteContent() {
   return (
-    <section className="py-20 bg-cream">
-      <div className="max-w-4xl mx-auto px-6">
+    <section className="py-12 sm:py-20 bg-cream">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Introduction */}
         <motion.div
-          className="mb-16 bg-white rounded-2xl border border-stone-200 p-8 md:p-10"
+          className="mb-16 bg-white rounded-2xl border border-stone-200 p-5 sm:p-8 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -204,7 +204,7 @@ function QualiteContent() {
 
         {/* Système de Management */}
         <motion.div
-          className="mb-16 bg-gradient-to-br from-brown-800 to-brown-900 rounded-2xl p-8 md:p-10 text-white"
+          className="mb-16 bg-gradient-to-br from-brown-800 to-brown-900 rounded-2xl p-5 sm:p-8 md:p-10 text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -253,7 +253,7 @@ function QualiteContent() {
 
         {/* Certification */}
         <motion.div
-          className="bg-brown-50 rounded-2xl border border-brown-200/50 p-8 md:p-10 text-center"
+          className="bg-brown-50 rounded-2xl border border-brown-200/50 p-5 sm:p-8 md:p-10 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

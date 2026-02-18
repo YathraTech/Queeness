@@ -9,7 +9,7 @@ import { StockIssuanceCard } from '@/components/cards/StockIssuanceCard'
 
 export function BentoGrid() {
   return (
-    <section className="max-w-6xl mx-auto px-6 mb-32">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 mb-16 sm:mb-32">
       <BentoHeader />
       <BentoCards />
     </section>
@@ -34,7 +34,7 @@ function BentoHeader() {
 function HeaderContent() {
   return (
     <div className="max-w-xl">
-      <h2 className="font-serif text-4xl md:text-5xl mb-6 text-stone-900">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 text-stone-900">
         Franchissez les frontières linguistiques et professionnelles.
       </h2>
       <p className="text-stone-500 text-lg font-light leading-relaxed">
@@ -69,7 +69,7 @@ function NavButton({ icon: Icon }: { icon: typeof ArrowLeft }) {
 function BentoCards() {
   return (
     <motion.div 
-      className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(300px,auto)]"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 auto-rows-[minmax(250px,auto)] sm:auto-rows-[minmax(300px,auto)]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

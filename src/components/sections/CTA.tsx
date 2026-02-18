@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 export function CTA() {
   return (
-    <section className="max-w-4xl mx-auto px-6 mb-20">
+    <section className="max-w-4xl mx-auto px-4 sm:px-6 mb-16 sm:mb-20">
       <CTACard />
     </section>
   )
@@ -15,7 +15,7 @@ export function CTA() {
 function CTACard() {
   return (
     <motion.div 
-      className="relative rounded-2xl p-12 md:p-16 text-center overflow-hidden bg-brown-800 text-white"
+      className="relative rounded-2xl p-8 sm:p-12 md:p-16 text-center overflow-hidden bg-brown-800 text-white"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -46,7 +46,7 @@ function CTAContent() {
 function CTATitle() {
   return (
     <motion.h2 
-      className="font-serif text-4xl md:text-5xl mb-6 tracking-tight"
+      className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 tracking-tight"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -66,7 +66,7 @@ function CTADescription() {
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.6 }}
     >
-      Découvrez une aventure culturelle où chaque leçon <br />
+      Découvrez une aventure culturelle où chaque leçon{' '}
       ouvre votre esprit et enrichit votre vie.
     </motion.p>
   )

@@ -5,7 +5,7 @@ import { Globe, Briefcase, GraduationCap } from 'lucide-react'
 
 export function FLEHero() {
   return (
-    <section className="relative pt-32 pb-20 bg-gradient-to-br from-white via-cream to-brown-50">
+    <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 bg-gradient-to-br from-white via-cream to-brown-50">
       <BackgroundElements />
       <HeroContent />
     </section>
@@ -46,7 +46,7 @@ function BackgroundElements() {
 
 function HeroContent() {
   return (
-    <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+    <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ function IconBadge() {
 
 function Title() {
   return (
-    <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-4 text-brown-900">
+    <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-4 text-brown-900">
       Français langue étrangère à visée professionnel
     </h1>
   )
@@ -105,7 +105,7 @@ function Subtitle() {
 
 function Description() {
   return (
-    <p className="text-xl md:text-2xl font-light text-stone-600 max-w-3xl mx-auto leading-relaxed mb-4">
+    <p className="text-base sm:text-xl md:text-2xl font-light text-stone-600 max-w-3xl mx-auto leading-relaxed mb-4">
       Développez des compétences linguistiques solides et adaptées au monde
       du travail avec une certification de niveau A2+ à C1
     </p>

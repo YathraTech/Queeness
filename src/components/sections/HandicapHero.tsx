@@ -5,7 +5,7 @@ import { Heart, Accessibility } from 'lucide-react'
 
 export function HandicapHero() {
   return (
-    <section className="relative pt-32 pb-20 bg-gradient-to-br from-cream via-brown-50 to-white">
+    <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 bg-gradient-to-br from-cream via-brown-50 to-white">
       <BackgroundPattern />
       <HeroContent />
     </section>
@@ -34,7 +34,7 @@ function BackgroundPattern() {
 
 function HeroContent() {
   return (
-    <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+    <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -55,11 +55,11 @@ function HeroContent() {
           Engagement inclusif
         </div>
 
-        <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 text-brown-900">
+        <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 text-brown-900">
           Prise en compte du handicap
         </h1>
 
-        <p className="text-xl md:text-2xl font-light text-stone-600 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-xl md:text-2xl font-light text-stone-600 max-w-3xl mx-auto leading-relaxed">
           Chez Queeness, nous avons à cœur de garantir l'égalité des chances et de
           favoriser l'inclusion dans toutes nos actions de formation.
         </p>

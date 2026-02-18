@@ -5,7 +5,7 @@ import { Sparkles, Users, ClipboardCheck, Target, BookCheck, MessageSquare } fro
 
 export function FLEMethodology() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-12 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeader />
         <MethodologyCards />
@@ -30,7 +30,7 @@ function SectionHeader() {
           <span className="text-sm font-medium text-brown-700">Méthodologie</span>
         </div>
       </div>
-      <h2 className="font-serif text-4xl md:text-5xl text-brown-900 mb-4">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-brown-900 mb-4">
         Une approche pédagogique éprouvée
       </h2>
       <p className="text-lg text-stone-600 max-w-3xl mx-auto">
@@ -78,7 +78,7 @@ function MethodologyCards() {
   ]
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 mb-12 sm:mb-20">
       {methods.map((method, index) => (
         <MethodCard key={method.title} {...method} index={index} />
       ))}
@@ -166,7 +166,7 @@ function ApproachSection() {
       className="relative"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-brown-100 to-cream rounded-3xl" />
-      <div className="relative bg-white/80 backdrop-blur rounded-3xl border border-stone-200 p-10 md:p-16">
+      <div className="relative bg-white/80 backdrop-blur rounded-2xl sm:rounded-3xl border border-stone-200 p-6 sm:p-10 md:p-16">
         <h3 className="font-serif text-3xl text-brown-900 text-center mb-4">
           Les avantages de notre formation
         </h3>
@@ -174,7 +174,7 @@ function ApproachSection() {
           Une formation adaptée du niveau A2+ au C1 avec une approche centrée sur vos besoins
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
           {advantages.map((advantage, index) => (
             <motion.div
               key={advantage.title}

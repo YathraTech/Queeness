@@ -6,7 +6,7 @@ import { Wallet, Wifi } from 'lucide-react'
 export function BankingCard() {
   return (
     <motion.div 
-      className="group relative rounded-2xl border p-8 overflow-hidden bg-white border-stone-200"
+      className="group relative rounded-2xl border p-6 sm:p-8 overflow-hidden bg-white border-stone-200"
       whileHover={{ y: -4, transition: { duration: 0.3 } }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}

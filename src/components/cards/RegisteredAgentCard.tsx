@@ -7,7 +7,7 @@ import Link from 'next/link'
 export function RegisteredAgentCard() {
   return (
     <motion.div 
-      className="group relative rounded-2xl bg-brown-50 border p-8 overflow-hidden border-brown-200/50"
+      className="group relative rounded-2xl bg-brown-50 border p-6 sm:p-8 overflow-hidden border-brown-200/50"
       whileHover={{ y: -4, transition: { duration: 0.3 } }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}

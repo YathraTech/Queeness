@@ -144,7 +144,7 @@ export default function FinancementPage() {
 
 function FinancementHero() {
   return (
-    <section className="relative pt-32 pb-20 bg-gradient-to-br from-cream via-brown-50 to-white">
+    <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 bg-gradient-to-br from-cream via-brown-50 to-white">
       <div className="absolute inset-0 bg-[radial-gradient(#e7e5e4_1px,transparent_1px)] [background-size:20px_20px] opacity-10" />
       <motion.div
         className="absolute top-40 right-20 w-64 h-64 rounded-full bg-brown-100/30 blur-3xl"
@@ -157,7 +157,7 @@ function FinancementHero() {
         transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -187,7 +187,7 @@ function FinancementHero() {
             Plusieurs solutions de financement
           </div>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 text-brown-900">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 text-brown-900">
             Financez votre formation
           </h1>
 
@@ -218,8 +218,8 @@ function FinancementHero() {
 
 function FinancingOptions() {
   return (
-    <section className="py-24 bg-cream">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-12 sm:py-24 bg-cream">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -227,7 +227,7 @@ function FinancingOptions() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-4xl md:text-5xl font-medium text-brown-900 mb-4">
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl font-medium text-brown-900 mb-4">
             Les dispositifs de financement
           </h2>
           <p className="text-lg text-stone-500 max-w-2xl mx-auto">
@@ -355,8 +355,8 @@ function FinancingOptions() {
 
 function Steps() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-5xl mx-auto px-6">
+    <section className="py-12 sm:py-24 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -364,7 +364,7 @@ function Steps() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-4xl md:text-5xl font-medium text-brown-900 mb-4">
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl font-medium text-brown-900 mb-4">
             Comment ça marche ?
           </h2>
           <p className="text-lg text-stone-500 max-w-2xl mx-auto">
@@ -403,16 +403,16 @@ function Steps() {
 
 function FinancementCTA() {
   return (
-    <section className="py-24 bg-cream">
-      <div className="max-w-4xl mx-auto px-6">
+    <section className="py-12 sm:py-24 bg-cream">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <motion.div
-          className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-3xl p-10 md:p-14 text-center text-white shadow-2xl"
+          className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-14 text-center text-white shadow-2xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-3xl md:text-4xl font-medium mb-4">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-medium mb-4">
             Besoin d&apos;aide pour votre financement ?
           </h2>
           <p className="text-brown-200 text-lg leading-relaxed max-w-2xl mx-auto mb-8">

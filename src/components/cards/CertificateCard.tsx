@@ -13,7 +13,7 @@ const certificateData = [
 export function CertificateCard() {
   return (
     <motion.div
-      className="absolute top-16 right-16 w-[90%] rounded-xl shadow-2xl border p-8 bg-white shadow-stone-200/50 border-stone-200"
+      className="absolute top-8 right-8 md:top-16 md:right-16 w-[92%] md:w-[90%] rounded-xl shadow-2xl border p-5 sm:p-8 bg-white shadow-stone-200/50 border-stone-200"
       whileHover={{ y: -8 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
@@ -27,7 +27,7 @@ function CertificateHeader() {
   return (
     <div className="flex items-start justify-between mb-8 pb-6 border-b border-stone-100">
       <div>
-        <h3 className="font-serif text-2xl italic text-stone-900">Des résultats qui parlent d'eux-mêmes</h3>
+        <h3 className="font-serif text-lg sm:text-2xl italic text-stone-900">Des résultats qui parlent d&apos;eux-mêmes</h3>
       </div>
       <motion.div
         className="w-12 h-12 rounded-full border flex items-center justify-center border-stone-200"

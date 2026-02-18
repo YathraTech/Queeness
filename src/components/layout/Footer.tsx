@@ -35,8 +35,8 @@ const footerSections = [
 
 export function Footer() {
   return (
-    <footer className="border-t bg-cream py-16 border-stone-200">
-      <div className="max-w-6xl mx-auto px-6">
+    <footer className="border-t bg-cream py-10 sm:py-16 border-stone-200">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <FooterGrid />
         <FooterBottom />
       </div>
@@ -47,7 +47,7 @@ export function Footer() {
 function FooterGrid() {
   return (
     <motion.div 
-      className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12"
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -64,7 +64,7 @@ function FooterGrid() {
 function BrandColumn() {
   return (
     <motion.div 
-      className="col-span-2 md:col-span-1"
+      className="col-span-1 sm:col-span-2 lg:col-span-1"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -150,7 +150,7 @@ function FooterLinks({ links }: { links: { label: string; href: string; external
 function FooterBottom() {
   return (
     <motion.div 
-      className="flex items-center justify-between pt-8 border-t border-stone-200"
+      className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-stone-200"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

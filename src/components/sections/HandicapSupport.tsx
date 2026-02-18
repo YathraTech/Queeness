@@ -6,14 +6,14 @@ import Link from 'next/link'
 
 export function HandicapSupport() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-white to-cream">
+    <section className="py-12 sm:py-20 px-4 sm:px-6 bg-gradient-to-b from-white to-cream">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-3xl p-10 md:p-16 text-white"
+          className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-16 text-white"
         >
           <div className="flex justify-center mb-8">
             <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center">

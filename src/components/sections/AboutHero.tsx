@@ -5,7 +5,7 @@ import { Heart, BookOpen } from 'lucide-react'
 
 export function AboutHero() {
   return (
-    <section className="relative pt-32 pb-20 bg-gradient-to-br from-white via-brown-50 to-cream">
+    <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 bg-gradient-to-br from-white via-brown-50 to-cream">
       <BackgroundElements />
       <HeroContent />
     </section>
@@ -46,7 +46,7 @@ function BackgroundElements() {
 
 function HeroContent() {
   return (
-    <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ function ProfileSection() {
 function TitleSection() {
   return (
     <>
-      <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-4 text-brown-900">
+      <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-4 text-brown-900">
         Lavania SUTHARSAN
       </h1>
       <div className="flex items-center justify-center gap-2 mb-6">
@@ -104,7 +104,7 @@ function QuoteSection() {
       className="relative"
     >
       <div className="text-6xl text-brown-200 absolute -top-4 left-1/2 -translate-x-1/2">"</div>
-      <p className="text-xl md:text-2xl font-light text-stone-600 italic max-w-3xl mx-auto leading-relaxed">
+      <p className="text-base sm:text-xl md:text-2xl font-light text-stone-600 italic max-w-3xl mx-auto leading-relaxed">
         Ma passion pour le français transcende les simples mots et constitue 
         le cœur vibrant de ma mission
       </p>

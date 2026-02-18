@@ -6,7 +6,7 @@ import { Check, Clock } from 'lucide-react'
 export function ComplianceCard() {
   return (
     <motion.div 
-      className="md:col-span-2 group relative rounded-2xl p-8 overflow-hidden bg-brown-800 text-white"
+      className="sm:col-span-2 md:col-span-2 group relative rounded-2xl p-6 sm:p-8 overflow-hidden bg-brown-800 text-white"
       whileHover={{ y: -4, transition: { duration: 0.3 } }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}

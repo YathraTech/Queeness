@@ -7,7 +7,7 @@ import { ArrowRight, Phone, Mail, Clock, CheckCircle } from 'lucide-react'
 
 export function FLECTA() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-cream to-white">
+    <section className="py-12 sm:py-20 px-4 sm:px-6 bg-gradient-to-b from-cream to-white">
       <div className="max-w-6xl mx-auto">
         <CTACard />
         <InfoSection />
@@ -28,7 +28,7 @@ function CTACard() {
       <div className="absolute inset-0 bg-gradient-to-br from-brown-700 to-brown-900 rounded-3xl" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
       
-      <div className="relative z-10 p-10 md:p-16">
+      <div className="relative z-10 p-6 sm:p-10 md:p-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <MainContent />
           <ContactInfo />
@@ -47,7 +47,7 @@ function MainContent() {
         viewport={{ once: true }}
         transition={{ delay: 0.2 }}
       >
-        <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+        <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl text-white mb-6">
           Prêt à développer vos compétences en français professionnel ?
         </h2>
         <p className="text-xl text-brown-100 mb-8">
@@ -186,7 +186,7 @@ function InfoSection() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.6 }}
-      className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
+      className="mt-10 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8"
     >
       <InfoCard
         title="Financement CPF"

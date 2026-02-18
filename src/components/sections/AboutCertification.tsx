@@ -5,8 +5,8 @@ import { Award, CheckCircle2, FileCheck, Shield } from 'lucide-react'
 
 export function AboutCertification() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-cream">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-white to-cream">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <CertificationHeader />
         <CertificationContent />
       </div>
@@ -28,7 +28,7 @@ function CertificationHeader() {
         Centre de formation agréé
       </div>
       
-      <h2 className="font-serif text-4xl md:text-5xl text-brown-900 mb-4">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-brown-900 mb-4">
         Notre Certification
       </h2>
     </motion.div>
@@ -51,41 +51,42 @@ function MainCertificationCard() {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-2xl p-8 text-white shadow-2xl"
+      className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-2xl p-6 sm:p-8 text-white shadow-2xl"
     >
-      <div className="flex items-start justify-between mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
         <div className="flex items-start gap-4">
           <motion.div
-            className="w-16 h-16 rounded-xl bg-white/10 backdrop-blur flex items-center justify-center flex-shrink-0"
+            className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-white/10 backdrop-blur flex items-center justify-center flex-shrink-0"
             whileHover={{ rotate: 360 }}
             transition={{ duration: 0.6 }}
           >
-            <Award size={32} className="text-brown-200" />
+            <Award size={28} className="text-brown-200 sm:hidden" />
+            <Award size={32} className="text-brown-200 hidden sm:block" />
           </motion.div>
           <div>
-            <h3 className="text-2xl font-serif mb-1">Certifié Qualiopi</h3>
+            <h3 className="text-xl sm:text-2xl font-serif mb-1">Certifié Qualiopi</h3>
             <p className="text-brown-200 text-sm">Depuis 2022</p>
           </div>
         </div>
-        
+
         <motion.a
           href="/attestation-qualiopi.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 text-white text-sm font-medium transition-all group"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 text-white text-sm font-medium transition-all group self-start"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span>Voir l'attestation</span>
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="14" 
-            height="14" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
+          <span>Voir l&apos;attestation</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
             strokeLinejoin="round"
             className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
           >

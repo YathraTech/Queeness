@@ -7,7 +7,7 @@ import { Phone, Mail, User, MessageCircle, FileText } from 'lucide-react'
 
 export function HandicapContact() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-12 sm:py-20 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
         <ContactCard />
       </div>
@@ -34,7 +34,7 @@ function ContactCard() {
 
 function ReferentSection() {
   return (
-    <div className="bg-gradient-to-br from-brown-50 to-brown-100 p-10 lg:p-12">
+    <div className="bg-gradient-to-br from-brown-50 to-brown-100 p-6 sm:p-10 lg:p-12">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-12 h-12 rounded-full bg-brown-700 text-white flex items-center justify-center">
           <User size={24} />
@@ -126,7 +126,7 @@ function ContactInfo({
 
 function ActionSection() {
   return (
-    <div className="p-10 lg:p-12 flex flex-col justify-center">
+    <div className="p-6 sm:p-10 lg:p-12 flex flex-col justify-center">
       <div className="text-center">
         <motion.div
           initial={{ scale: 0 }}

@@ -5,7 +5,7 @@ import { BookOpen, MessageSquare, PenTool, Globe, Briefcase, GraduationCap } fro
 
 export function FLEProgram() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-white to-cream">
+    <section className="py-12 sm:py-20 px-4 sm:px-6 bg-gradient-to-b from-white to-cream">
       <div className="max-w-6xl mx-auto">
         <SectionHeader />
         <ProgramModules />
@@ -30,7 +30,7 @@ function SectionHeader() {
           <span className="text-sm font-medium text-brown-700">Programme détaillé</span>
         </div>
       </div>
-      <h2 className="font-serif text-4xl md:text-5xl text-brown-900 mb-4">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-brown-900 mb-4">
         Un parcours adapté à vos besoins
       </h2>
       <p className="text-lg text-stone-600 max-w-3xl mx-auto">
@@ -117,7 +117,7 @@ function ProgramModules() {
   ]
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20">
       {modules.map((module, index) => (
         <ModuleCard key={module.title} {...module} index={index} />
       ))}
@@ -186,7 +186,7 @@ function LevelsSection() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-3xl p-10 md:p-16 text-white"
+      className="bg-gradient-to-br from-brown-800 to-brown-900 rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-16 text-white"
     >
       <h3 className="font-serif text-3xl mb-4 text-center">
         Niveaux visés : A2+ à C1
@@ -195,7 +195,7 @@ function LevelsSection() {
         Quel que soit votre niveau actuel, nous vous accompagnons vers l'excellence
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
         {levels.map((level, index) => (
           <LevelCard key={level.level} {...level} index={index} />
         ))}

@@ -5,7 +5,7 @@ import { Sparkles, Globe, Users, Target } from 'lucide-react'
 
 export function AboutContent() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-12 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <StorySection />
         <JourneySection />
@@ -37,8 +37,8 @@ function TextContent() {
         Mon Histoire
       </div>
       
-      <h2 className="font-serif text-4xl md:text-5xl text-brown-900">
-        Une passion née de l'amour des langues
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-brown-900">
+        Une passion née de l&apos;amour des langues
       </h2>
       
       <div className="space-y-4 text-stone-600 leading-relaxed">
@@ -106,7 +106,7 @@ function JourneySection() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="bg-white rounded-3xl border border-stone-200 p-10 md:p-12"
+      className="bg-white rounded-2xl sm:rounded-3xl border border-stone-200 p-6 sm:p-10 md:p-12"
     >
       <JourneyHeader />
       <JourneySteps />
@@ -117,7 +117,7 @@ function JourneySection() {
 function JourneyHeader() {
   return (
     <div className="text-center mb-12">
-      <h3 className="font-serif text-3xl md:text-4xl text-brown-900 mb-4">
+      <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-brown-900 mb-4">
         Mon Parcours
       </h3>
       <p className="text-stone-600 max-w-2xl mx-auto">
@@ -152,7 +152,7 @@ function JourneySteps() {
   ]
   
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
       {steps.map((step, index) => (
         <TimelineStep key={step.year} {...step} index={index} />
       ))}

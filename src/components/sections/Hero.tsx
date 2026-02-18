@@ -8,8 +8,8 @@ import { motion } from 'framer-motion'
 
 export function Hero() {
   return (
-    <section className="max-w-6xl mx-auto px-6 mb-24 relative z-10 pt-32">
-      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 mb-16 sm:mb-24 relative z-10 pt-24 sm:pt-32">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-20">
         <HeroContent />
         <HeroVisual />
       </div>
@@ -67,16 +67,16 @@ function TrustBadge() {
 
 function HeroTitle() {
   return (
-    <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight mb-8 leading-[0.95] text-brown-900">
-      Apprendre et <br />
-      <i className="text-brown-400">s'épanouir.</i>
+    <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-medium tracking-tight mb-6 sm:mb-8 leading-[0.95] text-brown-900">
+      Apprendre et <br className="hidden sm:block" />
+      <i className="text-brown-400">s&apos;épanouir.</i>
     </h1>
   )
 }
 
 function HeroDescription() {
   return (
-    <p className="text-lg max-w-md mb-10 leading-relaxed font-light text-stone-600">
+    <p className="text-base sm:text-lg max-w-md mb-8 sm:mb-10 leading-relaxed font-light text-stone-600">
       Ma passion pour le français transcende les simples mots. 
       Découvrez une aventure culturelle où chaque leçon est significative.
     </p>
@@ -129,8 +129,8 @@ function UserAvatars() {
 
 function HeroVisual() {
   return (
-    <motion.div 
-      className="flex-1 w-full relative"
+    <motion.div
+      className="flex-1 w-full relative hidden sm:block"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
@@ -160,7 +160,7 @@ function CardStack() {
 function BackCard() {
   return (
     <motion.div 
-      className="absolute top-0 right-0 w-[90%] rounded-xl shadow-lg border p-6 transform translate-x-4 -translate-y-4 opacity-60 scale-95 origin-bottom-left rotate-2 bg-white border-stone-200/60"
+      className="absolute top-0 right-0 w-[90%] rounded-xl shadow-lg border p-4 sm:p-6 transform translate-x-2 sm:translate-x-4 -translate-y-2 sm:-translate-y-4 opacity-60 scale-95 origin-bottom-left rotate-2 bg-white border-stone-200/60"
       whileHover={{ rotate: 3, scale: 0.97 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
@@ -176,7 +176,7 @@ function BackCard() {
 function MiddleCard() {
   return (
     <motion.div 
-      className="absolute top-8 right-8 w-[90%] rounded-xl shadow-xl border p-6 transform translate-x-2 -translate-y-2 opacity-80 scale-[0.98] origin-bottom-left -rotate-1 bg-white border-stone-200"
+      className="absolute top-4 right-4 sm:top-8 sm:right-8 w-[90%] rounded-xl shadow-xl border p-4 sm:p-6 transform translate-x-1 sm:translate-x-2 -translate-y-1 sm:-translate-y-2 opacity-80 scale-[0.98] origin-bottom-left -rotate-1 bg-white border-stone-200"
       whileHover={{ rotate: -2, scale: 0.99 }}
       transition={{ type: "spring", stiffness: 300 }}
     >

@@ -7,7 +7,7 @@ import { ArrowRight, MessageCircle } from 'lucide-react'
 
 export function AboutCTA() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-12 sm:py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         <CTACard />
       </div>
@@ -24,7 +24,7 @@ function CTACard() {
       transition={{ duration: 0.6 }}
       className="relative overflow-hidden"
     >
-      <div className="bg-white rounded-3xl border border-stone-200 p-10 md:p-16 text-center shadow-xl">
+      <div className="bg-white rounded-2xl sm:rounded-3xl border border-stone-200 p-6 sm:p-10 md:p-16 text-center shadow-xl">
         <BackgroundDecoration />
         <CTAContent />
       </div>
@@ -76,7 +76,7 @@ function CTAContent() {
         <MessageCircle size={28} className="text-brown-700" />
       </motion.div>
       
-      <h2 className="font-serif text-3xl md:text-4xl text-brown-900 mb-4">
+      <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-brown-900 mb-4">
         Prête à vous accompagner
       </h2>
       
