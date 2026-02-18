@@ -8,24 +8,26 @@ const footerSections = [
   {
     title: 'Programmes',
     links: [
-      { label: 'Français Professionnel', href: '#' },
-      { label: 'Français des Affaires', href: '#' },
-      { label: 'Préparation Examens', href: '#' },
+      { label: 'Français Professionnel', href: '/fle-professionnel' },
+      { label: 'Livret d\'accueil', href: '/livret-accueil.pdf', external: true },
+      { label: 'CGV', href: '/cgv' },
+      { label: 'Mentions légales', href: '/mentions-legales' },
+      { label: 'Politique de confidentialité', href: '/politique-de-confidentialite' },
+      { label: 'Politique qualité', href: '/politique-qualite' },
     ],
   },
   {
     title: 'À Propos',
     links: [
-      { label: 'Notre Mission', href: '#' },
-      { label: 'Méthodologie', href: '#' },
-      { label: 'Certification Qualiopi', href: '#' },
+      { label: 'Qui suis-je ?', href: '/qui-suis-je' },
+      { label: 'Handicap', href: '/handicap' },
+      { label: 'Certification Qualiopi', href: '/attestation-qualiopi.pdf', external: true },
     ],
   },
   {
     title: 'Ressources',
     links: [
-      { label: 'Blog', href: '#' },
-      { label: 'Contact', href: '#' },
+      { label: 'Contact', href: '/contact' },
       { label: 'FAQ', href: '#' },
     ],
   },
@@ -95,13 +97,13 @@ function BrandDescription() {
   )
 }
 
-function FooterColumn({ 
-  title, 
-  links, 
-  delay 
-}: { 
-  title: string; 
-  links: { label: string; href: string }[];
+function FooterColumn({
+  title,
+  links,
+  delay
+}: {
+  title: string;
+  links: { label: string; href: string; external?: boolean }[];
   delay: number;
 }) {
   return (
@@ -117,17 +119,28 @@ function FooterColumn({
   )
 }
 
-function FooterLinks({ links }: { links: { label: string; href: string }[] }) {
+function FooterLinks({ links }: { links: { label: string; href: string; external?: boolean }[] }) {
   return (
     <ul className="space-y-2 text-xs text-stone-500">
       {links.map((link) => (
         <li key={link.label}>
-          <Link 
-            href={link.href} 
-            className="hover:text-brown-700 transition-colors"
-          >
-            {link.label}
-          </Link>
+          {link.external ? (
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-brown-700 transition-colors"
+            >
+              {link.label}
+            </a>
+          ) : (
+            <Link
+              href={link.href}
+              className="hover:text-brown-700 transition-colors"
+            >
+              {link.label}
+            </Link>
+          )}
         </li>
       ))}
     </ul>
